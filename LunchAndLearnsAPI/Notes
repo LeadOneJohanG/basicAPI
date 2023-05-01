@@ -1,0 +1,28 @@
+STEPS: 
+1. npm init -y: Comando que se utiliza para crear un proyecto de Node js.
+2. npm i 'Dependencies':
+las dependencias serán aquellos paquetes que tu aplicación necesita en producción.
+las devDependencies son los paquetes que utilizas solamente en entorno local y para pruebas. Son aquellas que no necesitas para ejecutar tu código en producción.
+
+Para este ejemplo utilizaré:
+-Express: Permite crear API's, provee enrutamiento, uso de archivos estaticos,
+integracion con bases de datos, manejo de errores, middlewares, entre otras cosas.
+-Middleware: Es una funcion que se ejecuta entre la peticion y la respuesta del servidor,
+se puede ejecutar antes o después de llegar al controlador.
+-Mysql: Es un driver para mysql en Node.js, permite realizar una conexion con la base de datos mysql y ejecutar querys a la misma.
+-BodyParser: Es una libreria que se puede utilizar con Express para procesar los datos de
+solicitudes HTTP como formato JSON.
+-Nodemon: Permite monitorear los cambios aplicados en nuestro codigo y reiniciar
+automaticamente el servidor o aplicacion.
+
+3.Crear archivo index.j o app.js: Es el archivo que se lee una vez que se ejecuta el 
+código de Node.
+
+4. Crear las constantes (llamadas a los paquetes a utilizar);
+app = express(): Crea una nueva aplicación de express (por así decirlo un servidor HTTP 
+con la configuración adecuada).
+
+5. El app.listen enlaza la app así misma con el puerto especificado y la prepara para
+escuchar cualquier conexión o petición.
+
+6. Start coding
